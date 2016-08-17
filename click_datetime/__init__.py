@@ -19,9 +19,12 @@ class Datetime(click.ParamType):
         if value is None:
             return value
 
+        if isinstance(value, datetime):
+            return value
+
         try:
-            date = datetime.strptime(value, self.format)
-            return date
+            datetime_value = datetime.strptime(value, self.format)
+            return datetime_value
         except ValueError:
-            self.fail('Could not parse datetime string {datetime_str} formatted as {format}'.format(
+            self.fail('Could not parse datetime string "{datetime_str}" formatted as {format}'.format(
                 datetime_str=value, format=self.format,), param, ctx)
