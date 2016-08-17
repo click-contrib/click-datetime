@@ -1,6 +1,6 @@
 
 import click
-import datetime
+from datetime import datetime
 
 class Datetime(click.ParamType):
     '''
@@ -15,7 +15,7 @@ class Datetime(click.ParamType):
     def __init__(self, format):
         self.format = format
 
-    convert(self, value, param, ctx):
+    def convert(self, value, param, ctx):
         if value is None:
             return value
 
