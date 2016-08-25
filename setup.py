@@ -7,7 +7,7 @@ with open('README.md') as f:
 
 setup(
     name='click-datetime',
-    version='0.1',
+    version='0.2',
     description='Datetime type support for click.',
     long_description=readme,
     author='Dawson Reid',
