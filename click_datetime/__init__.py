@@ -26,5 +26,5 @@ class Datetime(click.ParamType):
             datetime_value = datetime.strptime(value, self.format)
             return datetime_value
         except ValueError as ex:
-            self.fail('Could not parse datetime string "{datetime_str}" formatted as {format}: {ex}'.format(
+            self.fail('Could not parse datetime string "{datetime_str}" formatted as {format} ({ex})'.format(
                 datetime_str=value, format=self.format, ex=ex,), param, ctx)
