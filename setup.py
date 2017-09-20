@@ -15,6 +15,8 @@ setup(
     url='https://github.com/ddaws/click-datetime',
     license='MIT',
     packages=['click_datetime'],
+    package_data={'click-datetime': ['README.md']},
+    include_package_data=True,
     install_requires=[
         'click',
     ],
