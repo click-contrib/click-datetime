@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "click-datetime"
-version = "0.3.0"
+version = "0.4.0"
 description = "Datetime type support for click."
 authors = ["Dawson R <105720-ddaws@users.noreply.gitlab.com>"]
 license = "MIT"
