@@ -1,4 +1,6 @@
-.DS_Store
+# Environment
+.env
+.envrc
 
 # Compiles and caches
 __pycache__
@@ -10,3 +12,7 @@ dist/
 
 # Virtual envs
 .venv/
+
+# Misc
+.DS_Store
+.aider*
