@@ -1,13 +1,32 @@
 # Click Datetime (in progress)
 
-Click support for Python's Datetime types to allow developers to easy parse date strings as
-parameters to Python commandline tools.
+Click support for Python's `datetime` types to allow developers to easy parse 
+date strings as parameters to Python click CLIs.
 
-**Note :** This package is VERY new and is still under development.
+## Example
 
-## Use Case
+```bash
+$ my-app import-task --start-date=2015-01-01 --end-date=2016-01-01
+```
 
-https://github.com/pallets/click/issues/603
+## Development
+
+### Building and packaging
+
+```bash
+poetry build
+```
+
+### Testing the compiled wheel
+
+```bash
+# Create a virtual environment for testing
+python -m .venv/test
+source .venv/test/bin/activate
+
+# Confirm importing and exporting is correct
+python -c 'import click_datetime as cd; print(dir(cd))'
+```
 
 ## Authors
 
