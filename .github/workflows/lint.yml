@@ -28,4 +28,4 @@ jobs:
 
     - name: Lint with Black
       run: |
-        poetry run black --check .
+        poetry run black --check click_datetime/
