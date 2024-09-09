@@ -12,9 +12,9 @@ from click_datetime import Datetime
     help="An example parsing and printing a datetime.",
 )
 @click.command()
-def foobar(date):
+def foo(date):
     click.echo("The date : {0}".format(date))
 
 
 if __name__ == "__main__":
-    foobar()  # type: ignore
+    foo()  # type: ignore
