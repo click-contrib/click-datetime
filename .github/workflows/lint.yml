@@ -26,6 +26,6 @@ jobs:
       run: |
         poetry install
 
-    - name: Lint with flake8
+    - name: Lint with Black
       run: |
-        poetry run flake8 .
+        poetry run black --check .
