@@ -7,14 +7,14 @@ from click_datetime import Datetime
 
 @click.option(
     "--date",
-    type=Datetime(format="%d/%m/%y"),
+    type=Datetime(format="%Y-%m-%d"),
     default=datetime.now(),
     help="An example parsing and printing a datetime.",
 )
 @click.command()
-def foo(date):
+def cli(date: datetime):
     click.echo("The date : {0}".format(date))
 
 
 if __name__ == "__main__":
-    foo()  # type: ignore
+    cli()  # type: ignore
