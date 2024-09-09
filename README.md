@@ -1,4 +1,4 @@
-# Click Datetime (in progress)
+# Click Datetime
 
 Click support for Python's `datetime` types to allow developers to easy parse 
 date strings as parameters to Python click CLIs.
