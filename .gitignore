@@ -1,6 +1,12 @@
 .DS_Store
+
+# Compiles and caches
+__pycache__
 *.pyc
+
+# Build & Packaging
+dist/
 *.egg-info
 
-dist/
+# Virtual envs
 .venv/
